@@ -1,41 +1,44 @@
-
+body {
+    background-color: rgb(250, 239, 233);
+}
 
 p {
     margin: 10px 0 !important;
-  }
+}
   
-  .login-container {
+.login-container {
     width: 400px;
     margin-top: 50px;
     text-align: center;
-  }
+}
   
-  .fa-small {
+.fa-small {
     font-size: 16px !important;
-  }
+}
   
-  .btn-float {
+.btn-float {
     float: left;
     margin-right: 10px;
-  }
+}
   
-  .img-small {
+.img-small {
     width: 180px;
-  }
+}
   
-  .fa-large {
+.fa-large {
     font-size: 26px !important;
-  } 
+} 
   
-  .input-group{
+.input-group{
     display:table;
     width:100%;
-  }
-  .input-group .input-field,
-  .input-group .input-group-addon{
+}
+
+.input-group .input-field,
+.input-group .input-group-addon{
     display:table-cell;
-  }
+}
   
-  .search-form {
+.search-form {
     margin: 70px 0;
-  }
+}
