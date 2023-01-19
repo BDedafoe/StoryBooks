@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "App to create public and private stories",
   "main": "app.js",
+  "proxy": "http://127.0.0.1:8080/",
   "scripts": {
     "start": "cross-env NODE_ENV=production node app",
     "dev": "cross-env NODE_ENV=development nodemon app",
@@ -26,7 +27,7 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "node":"18.6.0",
+    "node":"^18.6.0",
     "nodemon": "^2.0.20"
   }
 }
