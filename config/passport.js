@@ -4,15 +4,15 @@ const User = require('../models/User')
 
 module.exports = function (passport) {
   passport.use(
-    new GoogleStrategy(
-      {
+    new GoogleStrategy({
         clientID: process.env.GOOGLE_CLIENT_ID,
         clientSecret: process.env.GOOGLE_CLIENT_SECRET,
         callbackURL: '/auth/google/callback',
+        passReqToCallback: true
       },
-      async (accessToken, refreshToken, profile, done) => {
+      async (request, accessToken, refreshToken, profile, done) => {
         const newUser = {
-          clientID: profile.id,
+          googleID: profile.id,
           displayName: profile.displayName,
           firstName: profile.name.givenName,
           lastName: profile.name.familyName,
@@ -20,7 +20,7 @@ module.exports = function (passport) {
         }
 
         try {
-          let user = await User.findOne({ clientID: profile.id })
+          let user = await User.findOne({ googleID: profile.id })
 
           if (user) {
             done(null, user)

@@ -15,7 +15,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 //Load Config
-dotenv.config({ path: './config/.env' })
+dotenv.config({ path: '.env' })
 
 // Passport Config
 require('./config/passport')(passport)
