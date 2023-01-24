@@ -1,4 +1,5 @@
 const express = require('express')
+const app = express()
 const path = require('path')
 const dotenv = require('dotenv')
 const mongoose = require('mongoose')
@@ -21,8 +22,6 @@ dotenv.config({ path: '.env' })
 require('./config/passport')(passport)
 
 connectDB()
-
-const app = express()
 
 // Body parser
 app.use(express.urlencoded({ extended: false }))

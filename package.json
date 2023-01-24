@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "App to create public and private stories",
   "main": "app.js",
-  "proxy": "http://storybook-env.eba-bm2rnyp3.us-east-1.elasticbeanstalk.com/",
+  "proxy": "http://storybooks-tqu6.onrender.com/",
   "scripts": {
     "start": "cross-env NODE_ENV=production node app",
     "dev": "cross-env NODE_ENV=development nodemon app",
