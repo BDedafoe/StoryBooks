@@ -15,6 +15,7 @@ Project is created with:
 * MongoDB Atlas
 * Passport
 * Google-OAuth 2.0
+* Render
 	
 ## Setup
 To run this project, install it locally using npm:
