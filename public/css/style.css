@@ -1,5 +1,7 @@
 body {
-    background-color: rgb(250, 239, 233);
+    background: url('./images/indexBackground.jpg');
+    background-repeat: no-repeat;
+    background-position: fixed;
 }
 
 p {
@@ -8,7 +10,7 @@ p {
   
 .login-container {
     width: 400px;
-    margin-top: 50px;
+    margin-top: 60px;
     text-align: center;
 }
   
