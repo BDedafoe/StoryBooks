@@ -12,9 +12,11 @@ Node.js app which users can upload public and private stories from their lives. 
 Project is created with:
 * Node.js
 * Express
+* Express-Handlebars
 * MongoDB Atlas
 * Passport
 * Google-OAuth 2.0
+* Font Awesome
 * Render
 	
 ## Setup
